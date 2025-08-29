@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color:antiquewhite;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+ font-family:'ubuntu' , sans-serif ;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ height: 60px;
+ background-color:black;
+ color:white;
+ padding: 0 30px;
+}
+
+.container {
+  min-height:50vh;
+  width: 60%;
+  margin: 40px auto;            
+  padding: 30px;
+  background: url("https://free-3dtextureshd.com/wp-content/uploads/2025/01/49.jpg.webp") no-repeat center center ;
+  background-size:cover;
+  display: flex;
+  flex-direction:center; 
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+}
+
+.songItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   font-family:'ubuntu' , sans-serif ; 
+  gap: 15px;          /* space between img and text */
+  margin: 10px 0;     /* spacing between song items */
+}
+
+.songItem img {
+  display:flex;
+
+  width: 60px;        /* make song cover small */
+  height: 60px;       
+  object-fit: cover;  /* crop neatly instead of stretching */
+  border-radius: 8px; /* optional: round corners */
+}
+
+.playBtn {
+  background-color: #1db954;  /* Spotify green */
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.playBtn:hover {
+  background-color: #17a44c;
+}
+
+
+.menu {
+ display:flex; 
+ gap: 20px;
+ list-style-type:none;
+ padding: 0;
+ margin: 0;
+ 
+ 
+}
+
+.logo{
+  font-weight:bolder;
+  font-size: 30px;
+}
+ 
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;              /* taller since we stacked items */
+  background-color: #181818;
+  color: white;
+  display: flex;
+  flex-direction: column;     /* stack progress bar + buttons */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;                  /* space between bar and buttons */
+  padding: 10px 0;
+}
+
+.progress {
+  width: 80%;     
+  cursor: pointer;            /* progress bar length */
+}
+
+.controls {
+  display: flex;
+  gap: 15px;                  /* space between buttons */
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn.play {
+  font-size: 28px;            /* bigger play button */
+}
+
+
+.song{
+  background: rgba(0, 0, 0, 0.4); 
+  padding: 0;
+  margin: 0;
+  border-radius:8px;
+}
+

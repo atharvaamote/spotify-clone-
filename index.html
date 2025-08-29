@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav> 
+        <div class="logo">Spotify</div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+      <div class="container">
+        <div class="songItem">
+            <img src="https://wallpapers.com/images/featured/one-piece-logo-e6aw12asz5hmkzi5.jpg" alt="1">
+            <span> One Piece </span>
+             <button class="playBtn" onclick="playSong('onepiece.mp3')">▶</button>
+        </div>
+    </div>
+
+
+    <!-- Bottom Music Player -->
+    <div class="bottom">
+
+        <!-- Progress bar -->     
+        <div style="display:flex; align-items:center; gap:10px; width:80%;">
+        <span id="currentTime">0:00</span>
+        <input type="range" class="progress" id="Myprogressbar" min="0" max="100">
+         <span id="duration">0:00</span>
+
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="btn">🔀</button>   
+            <button class="btn">⏮</button>   
+            <button class="btn play">▶</button> 
+            <button class="btn">⏭</button>   
+            <button class="btn">🔁</button>   
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
